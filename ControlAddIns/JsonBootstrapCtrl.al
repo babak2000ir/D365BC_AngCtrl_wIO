@@ -5,7 +5,6 @@ controladdin JsonBootstrapCtrl
               'https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js';
     StartupScript = 'Scripts/JsonBSCtrlStart.js';
     StyleSheets = 'https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css';
-    //Images = 'images/images.jpg';
 
     RequestedHeight = 300;
     RequestedWidth = 300;

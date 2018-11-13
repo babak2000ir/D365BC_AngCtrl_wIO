@@ -9,7 +9,23 @@
 <link rel="stylesheet" href="styles.css"></head>
 <body>
     <div id="controlAddIn"></div>
-<script type="text/javascript" src="bundle.js">
+
+    <!-- <button onclick="window.fireAngularEvent('sendCustomer2Angular',null)">Click</button> -->
+    <p id="msgFromAngular">Old Value</p>
+<script type="text/javascript" src="runtime.js"></script><script type="text/javascript" src="polyfills.js"></script><script type="text/javascript" src="scripts.js"></script><script type="text/javascript" src="main.js"></script></body>
+
+<script>
+    fireAngularEvent('sendCustomer2Angular',[`[{ "FieldName": "MockFeild1", "FieldValue": "Value1" },
+                                            { "FieldName": "MockFeild2", "FieldValue": "Value2" },
+                                            { "FieldName": "MockFeild3", "FieldValue": "Value3" },
+                                            { "FieldName": "MockFeild4", "FieldValue": "Value4" },
+                                            { "FieldName": "MockFeild5", "FieldValue": "Value5" }]`]);
+
+    window.subscribeToAngularEvent('showMessageInBC', fn);
+
+    function fn ()
+    {
+        document.getElementById("msgFromAngular").innerHTML = arguments[0];
+    }
 </script>
-</body>
 </html>
