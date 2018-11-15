@@ -2,9 +2,9 @@ controladdin AngularCtrl
 {
     StartupScript = 'AngularApp/bundle.js';
 
-    RequestedHeight = 700;
-    MinimumHeight = 700;
-    MaximumHeight = 700;
+    RequestedHeight = 1000;
+    MinimumHeight = 1000;
+    MaximumHeight = 1000;
     RequestedWidth = 700;
     MinimumWidth = 700;
     MaximumWidth = 700;
@@ -18,6 +18,8 @@ controladdin AngularCtrl
 
 
     event ControlAddInReady();
+    event ShowMessage(ptxtMessage: Text);
 
-    //procedure LoadAngularScripts();
+    procedure GetCustomer(ptxtCustomer: Text);
+    procedure InitiEventCycle();
 }

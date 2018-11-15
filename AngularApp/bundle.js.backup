@@ -19,3 +19,4 @@ window.ShowMessageEventHandler = function (){
 }
 
 Microsoft.Dynamics.NAV.InvokeExtensibilityMethod('ControlAddInReady',null);
+
